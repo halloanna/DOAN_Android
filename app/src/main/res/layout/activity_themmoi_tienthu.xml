@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".themmoi_tienthu"
+    android:verticalScrollbarPosition="right"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/ngayThemTienThu"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="0.65"
+        android:ems="10"
+        android:inputType="date"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/txtTienThu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"/>
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_menu_tong_quat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <RadioButton
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/diennuoc_thu"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/radiobtn_view"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:drawableTop="@drawable/diennuoc"
+                android:text="@string/diennuoc" />
+
+            <RadioButton
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/tienluong_thu"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawableTop="@drawable/icon_money"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:background="@drawable/radiobtn_view"
+                android:text="@string/tienluong" />
+
+            <RadioButton
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/tienthuong_thu"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawableTop="@drawable/icon_money"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:background="@drawable/radiobtn_view"
+                android:text="@string/tienthuong" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_them_chi"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="0.1"
+        android:text="@string/them_btn"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="bold" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_menu_tong_quat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:itemIconSize="30dp"
+        app:itemIconTint="?attr/editTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/botttom_nav_menu" />
+
+
+
+
+</LinearLayout>

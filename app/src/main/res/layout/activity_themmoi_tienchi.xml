@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:verticalScrollbarPosition="right"
+    tools:context=".themmoi_tienchi">
+
+
+    <EditText
+        android:id="@+id/ngayThemTienChi"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="0.75"
+        android:ems="10"
+        android:focusable="auto"
+        android:inputType="date"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/txtTienChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:ems="10"
+        android:freezesText="false"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_menu_tong_quat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/baohiem"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/radiobtn_view"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:drawableTop="@drawable/yte"
+                android:padding="10dp"
+                android:text="@string/baohiem_string" />
+
+            <RadioButton
+                android:id="@+id/canhan"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/radiobtn_view"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:drawableTop="@drawable/chitieuhangngay"
+                android:padding="10dp"
+                android:text="@string/canhan" />
+
+            <RadioButton
+                android:id="@+id/quanao"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/radiobtn_view"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:drawableTop="@drawable/quanao"
+                android:padding="10dp"
+                android:text="@string/quanao" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/mypham"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/radiobtn_view"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:drawableTop="@drawable/mypham"
+                android:padding="10dp"
+                android:text="@string/mypham" />
+
+            <RadioButton
+                android:id="@+id/giaoluu"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/radiobtn_view"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:drawableTop="@drawable/giaoluu"
+                android:padding="10dp"
+                android:text="@string/giaoluu" />
+
+            <RadioButton
+                android:id="@+id/anuong"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/radiobtn_view"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:drawableTop="@drawable/anuong"
+                android:padding="10dp"
+                android:text="@string/anuong" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/giaoduc"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/radiobtn_view"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:drawableTop="@drawable/giaoduc"
+                android:padding="10dp"
+                android:text="@string/giaoduc" />
+
+            <RadioButton
+                android:id="@+id/diennuoc"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/radiobtn_view"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:drawableTop="@drawable/diennuoc"
+                android:padding="10dp"
+                android:text="@string/diennuoc" />
+
+            <RadioButton
+                android:id="@+id/dichuyen"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/radiobtn_view"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:drawableTop="@drawable/car"
+                android:padding="10dp"
+                android:text="@string/dichuyen" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_them_chi"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="0.1"
+        android:text="@string/them_btn"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="bold" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_menu_tong_quat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:itemIconSize="30dp"
+        app:itemIconTint="?attr/editTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/botttom_nav_menu" />
+
+
+</LinearLayout>

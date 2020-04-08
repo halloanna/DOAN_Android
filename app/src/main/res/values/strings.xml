@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">DOAN</string>
+    <string name="title_activity_settings_">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="baohiem_string">Bảo Hiểm</string>
+    <string name="them_btn">Thêm</string>
+    <string name="giaoduc">Giáo dục</string>
+    <string name="giaoluu">Giao Lưu</string>
+    <string name="anuong">Ăn Uống</string>
+    <string name="canhan">Cá Nhân</string>
+    <string name="diennuoc">Điện nước</string>
+    <string name="quanao">Quần Áo</string>
+    <string name="dichuyen">Di Chuyển</string>
+    <string name="mypham">Mỹ Phẩm</string>
+    <string name="tienluong">Tiền lương</string>
+    <string name="phucap">Phụ Cấp</string>
+    <string name="tienthuong">Tiền thưởng</string>
+    <string name="xahoi">Xã Hội</string>
+    <string name="sua">Sửa</string>
+    <string name="huy">Hủy</string>
+</resources>
